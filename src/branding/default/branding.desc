@@ -8,7 +8,7 @@
 # Additional styling can be done using the stylesheet.qss
 # file, also in the branding directory.
 ---
-componentName:  default
+componentName:  AstroArch
 
 
 ### WELCOME / OVERALL WORDING
@@ -121,17 +121,17 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         "${NAME}"
-    shortProductName:    Generic
-    version:             2023.3 LTS
-    shortVersion:        2023.3
-    versionedName:       Fancy GNU/Linux 2023.3 LTS "Venomous Vole"
-    shortVersionedName:  FancyGL 2023.3
-    bootloaderEntryName: FancyGL
-    productUrl:          https://calamares.io/
-    supportUrl:          https://github.com/calamares/calamares/wiki
-    knownIssuesUrl:      https://github.com/calamares/calamares/issues
-    releaseNotesUrl:     https://calamares.io/news/
+    productName:         AstroArch
+    shortProductName:    AstroArch
+    version:             1.9
+    shortVersion:        1.9
+    versionedName:       AstroArch 1.9
+    shortVersionedName:  AstroArch 1.9
+    bootloaderEntryName: AstroArch
+    productUrl:          https://github.com/devDucks/astroarch
+    supportUrl:          https://discord.gg/uJEQCZKBT8
+    knownIssuesUrl:      https://github.com/devDucks/astroarch/issues
+    releaseNotesUrl:     https://github.com/devDucks/astroarch/releases
     donateUrl:           https://kde.org/community/donations/index.php
 
 # These images are loaded from the branding module directory.
@@ -163,8 +163,8 @@ strings:
 # These filenames can also use substitutions from os-release (see above).
 images:
     # productBanner:       "banner.png"
-    productIcon:         "squid.png"
-    productLogo:         "squid.png"
+    productIcon:         "astroarch-w-192x192.png"
+    productLogo:         "astroarch-w-192x192.png"
     # productWallpaper:    "wallpaper.png"
     productWelcome:      "languages.png"
 
@@ -183,7 +183,7 @@ style:
    SidebarBackground:        "#292F34"
    SidebarText:              "#FFFFFF"
    SidebarTextCurrent:       "#292F34"
-   SidebarBackgroundCurrent: "#D35400"
+   SidebarBackgroundCurrent: "#168FCB"
 
 ### SLIDESHOW
 #
@@ -234,6 +234,6 @@ slideshowAPI: 2
 #                Please note that upload size may be slightly over the limit (due
 #                to last minute logging), so provide a suitable value.
 uploadServer :
-    type :    "fiche"
+    type :    "none"
     url :     "http://termbin.com:9999"
     sizeLimit : -1
