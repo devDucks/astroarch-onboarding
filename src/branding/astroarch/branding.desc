@@ -8,7 +8,7 @@
 # Additional styling can be done using the stylesheet.qss
 # file, also in the branding directory.
 ---
-componentName:  AstroArch
+componentName:  astroarch
 
 
 ### WELCOME / OVERALL WORDING
@@ -121,8 +121,8 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         AstroArch
-    shortProductName:    AstroArch
+    productName:         astroarch
+    shortProductName:    astroarch
     version:             1.9
     shortVersion:        1.9
     versionedName:       AstroArch 1.9
