@@ -203,8 +203,8 @@ style:
 #   slideshow:               "show.qml"
 # To configure images, like the filenames (here, as an inline list):
 #   slideshow: [ "/etc/calamares/slideshow/0.png", "/etc/logo.png" ]
-slideshow:               "show.qml"
-#slideshow: [ "/usr/share/calamares/branding/astroarch/slide1.jpg", "/usr/share/calamares/branding/astroarch/slide2.jpg", "/usr/share/calamares/branding/astroarch/slide3.jpg" ]
+#slideshow:               "show.qml"
+slideshow: [ "/usr/share/calamares/branding/astroarch/slide1.jpg", "/usr/share/calamares/branding/astroarch/slide2.jpg", "/usr/share/calamares/branding/astroarch/slide3.jpg" ]
 
 
 # There are two available APIs for a QML slideshow:
