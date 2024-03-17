@@ -1,0 +1,30 @@
+- name: "Default"
+  description: "Default"
+  hidden: true
+  selected: true
+  critical: false
+  expanded: false
+  packages:
+    - scrot
+- name: "Browsers"
+  description: "Browsers"
+  hidden: false
+  selected: false
+  critical: false
+  expanded: true
+  packages:
+    - chromium
+    - firefox
+- name: "Astronomy"
+  description: "Astronomy"
+  hidden: false
+  selected: false
+  critical: false
+  expanded: true
+  packages:
+    - kstars
+    - phd2
+    - siril
+    - firecapture
+
+
