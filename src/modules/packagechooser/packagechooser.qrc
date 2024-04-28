@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
+         <file>images/powermax.png</file>
+         <file>images/powerofficial.png</file>
          <file>images/gps.png</file>
          <file>images/no_gps.jpeg</file>
          <file>images/ftp.png</file>
