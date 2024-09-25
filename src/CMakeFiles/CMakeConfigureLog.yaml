@@ -1,0 +1,921 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:67 (project)"
+    message: |
+      The system is: Linux - 6.6.51-3-rpi - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:67 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/3.30.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:67 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/3.30.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:67 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-xuKJvC"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-xuKJvC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-xuKJvC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ea157/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ea157.dir/build.make CMakeFiles/cmTC_ea157.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-xuKJvC'
+        Building C object CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: aarch64-unknown-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/archlinuxarm/PKGBUILDs/issues --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-linker-build-id --enable-lto --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-multilib --disable-werror --host=aarch64-unknown-linux-gnu --build=aarch64-unknown-linux-gnu --with-arch=armv8-a --enable-fix-cortex-a53-835769 --enable-fix-cortex-a53-843419
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.1 20240507 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ea157.dir/'
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ea157.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=armv8-a -mlittle-endian -mabi=lp64 -version -o /tmp/ccCCxyBG.s
+        GNU C17 (GCC) version 14.1.1 20240507 (aarch64-unknown-linux-gnu)
+        	compiled by GNU C version 14.1.1 20240507, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../aarch64-unknown-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include
+         /usr/local/include
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: acadb17ae3fed4dd0ac306981472b216
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ea157.dir/'
+         as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o /tmp/ccCCxyBG.s
+        GNU assembler version 2.42.0 (aarch64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.42.0
+        COMPILER_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_ea157
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea157.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o -o cmTC_ea157
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper
+        Target: aarch64-unknown-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/archlinuxarm/PKGBUILDs/issues --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-linker-build-id --enable-lto --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-multilib --disable-werror --host=aarch64-unknown-linux-gnu --build=aarch64-unknown-linux-gnu --with-arch=armv8-a --enable-fix-cortex-a53-835769 --enable-fix-cortex-a53-843419
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.1 20240507 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ea157' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ea157.'
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/collect2 -plugin /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccU5PuYv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-835769 --fix-cortex-a53-843419 -pie -o cmTC_ea157 /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../.. -v CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o
+        collect2 version 14.1.1 20240507
+        /usr/bin/ld -plugin /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccU5PuYv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-835769 --fix-cortex-a53-843419 -pie -o cmTC_ea157 /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../.. -v CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.42.0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ea157' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ea157.'
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-xuKJvC'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:67 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include] ==> [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed] ==> [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include;/usr/local/include;/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:67 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-xuKJvC']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ea157/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_ea157.dir/build.make CMakeFiles/cmTC_ea157.dir/build]
+        ignore line: [make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-xuKJvC']
+        ignore line: [Building C object CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=c c++ d fortran go lto m2 objc obj-c++ rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/archlinuxarm/PKGBUILDs/issues --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-linker-build-id --enable-lto --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-multilib --disable-werror --host=aarch64-unknown-linux-gnu --build=aarch64-unknown-linux-gnu --with-arch=armv8-a --enable-fix-cortex-a53-835769 --enable-fix-cortex-a53-843419]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.1 20240507 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ea157.dir/']
+        ignore line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ea157.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=armv8-a -mlittle-endian -mabi=lp64 -version -o /tmp/ccCCxyBG.s]
+        ignore line: [GNU C17 (GCC) version 14.1.1 20240507 (aarch64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.1.1 20240507  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../aarch64-unknown-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: acadb17ae3fed4dd0ac306981472b216]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ea157.dir/']
+        ignore line: [ as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o /tmp/ccCCxyBG.s]
+        ignore line: [GNU assembler version 2.42.0 (aarch64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.42.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_ea157]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea157.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -Wl -v CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o -o cmTC_ea157]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=c c++ d fortran go lto m2 objc obj-c++ rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/archlinuxarm/PKGBUILDs/issues --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-linker-build-id --enable-lto --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-multilib --disable-werror --host=aarch64-unknown-linux-gnu --build=aarch64-unknown-linux-gnu --with-arch=armv8-a --enable-fix-cortex-a53-835769 --enable-fix-cortex-a53-843419]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.1 20240507 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ea157' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ea157.']
+        link line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/collect2 -plugin /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccU5PuYv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-835769 --fix-cortex-a53-843419 -pie -o cmTC_ea157 /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../.. -v CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccU5PuYv.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-835769] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_ea157] ==> ignore
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1] ==> dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1]
+          arg [-L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../..] ==> dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 14.1.1 20240507]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccU5PuYv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-835769 --fix-cortex-a53-843419 -pie -o cmTC_ea157 /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../.. -v CMakeFiles/cmTC_ea157.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1] ==> [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1]
+        collapse library dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o;/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:67 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.42.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:67 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-QEr3yV"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-QEr3yV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-QEr3yV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_53014/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_53014.dir/build.make CMakeFiles/cmTC_53014.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-QEr3yV'
+        Building CXX object CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: aarch64-unknown-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/archlinuxarm/PKGBUILDs/issues --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-linker-build-id --enable-lto --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-multilib --disable-werror --host=aarch64-unknown-linux-gnu --build=aarch64-unknown-linux-gnu --with-arch=armv8-a --enable-fix-cortex-a53-835769 --enable-fix-cortex-a53-843419
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.1 20240507 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_53014.dir/'
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_53014.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=armv8-a -mlittle-endian -mabi=lp64 -version -o /tmp/ccxtk329.s
+        GNU C++17 (GCC) version 14.1.1 20240507 (aarch64-unknown-linux-gnu)
+        	compiled by GNU C version 14.1.1 20240507, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../aarch64-unknown-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1/aarch64-unknown-linux-gnu
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include
+         /usr/local/include
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 9c4cb1e8e48363ac8f8cc0225491ed21
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_53014.dir/'
+         as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxtk329.s
+        GNU assembler version 2.42.0 (aarch64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.42.0
+        COMPILER_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_53014
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53014.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_53014
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper
+        Target: aarch64-unknown-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/archlinuxarm/PKGBUILDs/issues --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-linker-build-id --enable-lto --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-multilib --disable-werror --host=aarch64-unknown-linux-gnu --build=aarch64-unknown-linux-gnu --with-arch=armv8-a --enable-fix-cortex-a53-835769 --enable-fix-cortex-a53-843419
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.1 20240507 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_53014' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_53014.'
+         /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/collect2 -plugin /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDV6aBY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-835769 --fix-cortex-a53-843419 -pie -o cmTC_53014 /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../.. -v CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o
+        collect2 version 14.1.1 20240507
+        /usr/bin/ld -plugin /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDV6aBY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-835769 --fix-cortex-a53-843419 -pie -o cmTC_53014 /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../.. -v CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.42.0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_53014' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_53014.'
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-QEr3yV'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:67 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1]
+          add: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1/aarch64-unknown-linux-gnu]
+          add: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward]
+          add: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1] ==> [/usr/include/c++/14.1.1]
+        collapse include dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1/aarch64-unknown-linux-gnu] ==> [/usr/include/c++/14.1.1/aarch64-unknown-linux-gnu]
+        collapse include dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward] ==> [/usr/include/c++/14.1.1/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include] ==> [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed] ==> [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14.1.1;/usr/include/c++/14.1.1/aarch64-unknown-linux-gnu;/usr/include/c++/14.1.1/backward;/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include;/usr/local/include;/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:67 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-QEr3yV']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_53014/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_53014.dir/build.make CMakeFiles/cmTC_53014.dir/build]
+        ignore line: [make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-QEr3yV']
+        ignore line: [Building CXX object CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=c c++ d fortran go lto m2 objc obj-c++ rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/archlinuxarm/PKGBUILDs/issues --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-linker-build-id --enable-lto --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-multilib --disable-werror --host=aarch64-unknown-linux-gnu --build=aarch64-unknown-linux-gnu --with-arch=armv8-a --enable-fix-cortex-a53-835769 --enable-fix-cortex-a53-843419]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.1 20240507 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_53014.dir/']
+        ignore line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_53014.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=armv8-a -mlittle-endian -mabi=lp64 -version -o /tmp/ccxtk329.s]
+        ignore line: [GNU C++17 (GCC) version 14.1.1 20240507 (aarch64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.1.1 20240507  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../aarch64-unknown-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1]
+        ignore line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1/aarch64-unknown-linux-gnu]
+        ignore line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 9c4cb1e8e48363ac8f8cc0225491ed21]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_53014.dir/']
+        ignore line: [ as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxtk329.s]
+        ignore line: [GNU assembler version 2.42.0 (aarch64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.42.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_53014]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53014.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_53014]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=c c++ d fortran go lto m2 objc obj-c++ rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/archlinuxarm/PKGBUILDs/issues --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-linker-build-id --enable-lto --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-multilib --disable-werror --host=aarch64-unknown-linux-gnu --build=aarch64-unknown-linux-gnu --with-arch=armv8-a --enable-fix-cortex-a53-835769 --enable-fix-cortex-a53-843419]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.1 20240507 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_53014' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_53014.']
+        link line: [ /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/collect2 -plugin /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDV6aBY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-835769 --fix-cortex-a53-843419 -pie -o cmTC_53014 /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../.. -v CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccDV6aBY.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-835769] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_53014] ==> ignore
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1] ==> dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1]
+          arg [-L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../..] ==> dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 14.1.1 20240507]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDV6aBY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-835769 --fix-cortex-a53-843419 -pie -o cmTC_53014 /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../.. -v CMakeFiles/cmTC_53014.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1] ==> [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1]
+        collapse library dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtbeginS.o;/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-unknown-linux-gnu/14.1.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:67 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.42.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/lib/cmake/Qt6/Qt6Dependencies.cmake:27 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib/cmake/Qt6/Qt6Config.cmake:134 (include)"
+      - "CMakeLists.txt:320 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oCGOms"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oCGOms"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oCGOms'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3dc31/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3dc31.dir/build.make CMakeFiles/cmTC_3dc31.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oCGOms'
+        Building C object CMakeFiles/cmTC_3dc31.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -Wall  -std=gnu99 -o CMakeFiles/cmTC_3dc31.dir/src.c.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oCGOms/src.c
+        Linking C executable cmTC_3dc31
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3dc31.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  CMakeFiles/cmTC_3dc31.dir/src.c.o -o cmTC_3dc31
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oCGOms'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:33 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:55 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:111 (find_dependency)"
+      - "/usr/lib/cmake/Qt6Concurrent/Qt6ConcurrentDependencies.cmake:42 (_qt_internal_find_qt_dependencies)"
+      - "/usr/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfig.cmake:53 (include)"
+      - "/usr/lib/cmake/Qt6/Qt6Config.cmake:179 (find_package)"
+      - "CMakeLists.txt:320 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-LDDGEL"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-LDDGEL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall -Werror=return-type -Wnon-virtual-dtor -Woverloaded-virtual -fdiagnostics-color=auto"
+      CMAKE_CXX_FLAGS_DEBUG: "-Og -g -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-LDDGEL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_af775/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_af775.dir/build.make CMakeFiles/cmTC_af775.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-LDDGEL'
+        Building CXX object CMakeFiles/cmTC_af775.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_STDATOMIC  -Wall -Werror=return-type -Wnon-virtual-dtor -Woverloaded-virtual -fdiagnostics-color=auto  -std=gnu++17 -o CMakeFiles/cmTC_af775.dir/src.cxx.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-LDDGEL/src.cxx
+        Linking CXX executable cmTC_af775
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af775.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall -Werror=return-type -Wnon-virtual-dtor -Woverloaded-virtual -fdiagnostics-color=auto  CMakeFiles/cmTC_af775.dir/src.cxx.o -o cmTC_af775
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-LDDGEL'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-MM0hEU"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-MM0hEU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-MM0hEU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_959e5/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_959e5.dir/build.make CMakeFiles/cmTC_959e5.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-MM0hEU'
+        Building C object CMakeFiles/cmTC_959e5.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=gnu99 -o CMakeFiles/cmTC_959e5.dir/CheckFunctionExists.c.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-MM0hEU/CheckFunctionExists.c
+        Linking C executable cmTC_959e5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_959e5.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_959e5.dir/CheckFunctionExists.c.o -o cmTC_959e5  /usr/lib/libX11.so /usr/lib/libXext.so
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-MM0hEU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-ltjJIt"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-ltjJIt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-ltjJIt'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_22a15/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_22a15.dir/build.make CMakeFiles/cmTC_22a15.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-ltjJIt'
+        Building C object CMakeFiles/cmTC_22a15.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=gethostbyname -std=gnu99 -o CMakeFiles/cmTC_22a15.dir/CheckFunctionExists.c.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-ltjJIt/CheckFunctionExists.c
+        Linking C executable cmTC_22a15
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22a15.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_22a15.dir/CheckFunctionExists.c.o -o cmTC_22a15
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-ltjJIt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-j4jKUm"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-j4jKUm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-j4jKUm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_750e4/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_750e4.dir/build.make CMakeFiles/cmTC_750e4.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-j4jKUm'
+        Building C object CMakeFiles/cmTC_750e4.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=connect -std=gnu99 -o CMakeFiles/cmTC_750e4.dir/CheckFunctionExists.c.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-j4jKUm/CheckFunctionExists.c
+        Linking C executable cmTC_750e4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_750e4.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_750e4.dir/CheckFunctionExists.c.o -o cmTC_750e4
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-j4jKUm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-qFOIZy"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-qFOIZy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-qFOIZy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ce0a6/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ce0a6.dir/build.make CMakeFiles/cmTC_ce0a6.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-qFOIZy'
+        Building C object CMakeFiles/cmTC_ce0a6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=remove -std=gnu99 -o CMakeFiles/cmTC_ce0a6.dir/CheckFunctionExists.c.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-qFOIZy/CheckFunctionExists.c
+        Linking C executable cmTC_ce0a6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce0a6.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_ce0a6.dir/CheckFunctionExists.c.o -o cmTC_ce0a6
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-qFOIZy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-B1juhF"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-B1juhF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-B1juhF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_906ba/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_906ba.dir/build.make CMakeFiles/cmTC_906ba.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-B1juhF'
+        Building C object CMakeFiles/cmTC_906ba.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=shmat -std=gnu99 -o CMakeFiles/cmTC_906ba.dir/CheckFunctionExists.c.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-B1juhF/CheckFunctionExists.c
+        Linking C executable cmTC_906ba
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_906ba.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_906ba.dir/CheckFunctionExists.c.o -o cmTC_906ba
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-B1juhF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:750 (check_library_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oEqAlG"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oEqAlG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oEqAlG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9ed18/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_9ed18.dir/build.make CMakeFiles/cmTC_9ed18.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oEqAlG'
+        Building C object CMakeFiles/cmTC_9ed18.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -std=gnu99 -o CMakeFiles/cmTC_9ed18.dir/CheckFunctionExists.c.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oEqAlG/CheckFunctionExists.c
+        Linking C executable cmTC_9ed18
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ed18.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_9ed18.dir/CheckFunctionExists.c.o -o cmTC_9ed18  -lICE
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-oEqAlG'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeModules/FindLIBPARTED.cmake:55 (CHECK_FUNCTION_EXISTS)"
+      - "src/modules/welcome/CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for ped_file_system_clobber"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-rRdKM6"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-rRdKM6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "LIBPARTED_FILESYSTEM_SUPPORT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-rRdKM6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ed571/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ed571.dir/build.make CMakeFiles/cmTC_ed571.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-rRdKM6'
+        Building C object CMakeFiles/cmTC_ed571.dir/CheckFunctionExists.c.o
+        /usr/bin/cc  -I/usr/include/parted -DCHECK_FUNCTION_EXISTS=ped_file_system_clobber -std=gnu99 -o CMakeFiles/cmTC_ed571.dir/CheckFunctionExists.c.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-rRdKM6/CheckFunctionExists.c
+        Linking C executable cmTC_ed571
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed571.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=ped_file_system_clobber CMakeFiles/cmTC_ed571.dir/CheckFunctionExists.c.o -o cmTC_ed571  /usr/lib/libparted.so /usr/lib/libparted-fs-resize.so
+        /usr/bin/ld: CMakeFiles/cmTC_ed571.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `ped_file_system_clobber'
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [CMakeFiles/cmTC_ed571.dir/build.make:101: cmTC_ed571] Error 1
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-rRdKM6'
+        make: *** [Makefile:127: cmTC_ed571/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeModules/FindLIBPARTED.cmake:56 (CHECK_FUNCTION_EXISTS)"
+      - "src/modules/welcome/CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for ped_file_system_resize"
+    directories:
+      source: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-DLHpqE"
+      binary: "/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-DLHpqE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/astronaut/Projects/astroarch-onboarding/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "LIBPARTED_FS_RESIZE_LIBRARY_SUPPORT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-DLHpqE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8dbc2/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_8dbc2.dir/build.make CMakeFiles/cmTC_8dbc2.dir/build
+        make[1]: Entering directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-DLHpqE'
+        Building C object CMakeFiles/cmTC_8dbc2.dir/CheckFunctionExists.c.o
+        /usr/bin/cc  -I/usr/include/parted -DCHECK_FUNCTION_EXISTS=ped_file_system_resize -std=gnu99 -o CMakeFiles/cmTC_8dbc2.dir/CheckFunctionExists.c.o -c /home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-DLHpqE/CheckFunctionExists.c
+        Linking C executable cmTC_8dbc2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8dbc2.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=ped_file_system_resize CMakeFiles/cmTC_8dbc2.dir/CheckFunctionExists.c.o -o cmTC_8dbc2  /usr/lib/libparted.so /usr/lib/libparted-fs-resize.so
+        make[1]: Leaving directory '/home/astronaut/Projects/astroarch-onboarding/src/CMakeFiles/CMakeScratch/TryCompile-DLHpqE'
+        
+      exitCode: 0
+...
