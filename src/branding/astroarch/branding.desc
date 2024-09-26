@@ -123,10 +123,10 @@ navigation: widget
 strings:
     productName:         astroarch
     shortProductName:    astroarch
-    version:             1.9
-    shortVersion:        1.9
-    versionedName:       AstroArch 1.9
-    shortVersionedName:  AstroArch 1.9
+    version:             1
+    shortVersion:        1
+    versionedName:       AstroArch
+    shortVersionedName:  AstroArch
     bootloaderEntryName: AstroArch
     productUrl:          https://github.com/devDucks/astroarch
     supportUrl:          https://discord.gg/uJEQCZKBT8
