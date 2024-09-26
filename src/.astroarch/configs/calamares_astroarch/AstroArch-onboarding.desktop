@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=AstroArch onboarding
+GenericName=AstroArch onboarding
+Keywords=calamares;system;configurer;
+TryExec=calamares
+Exec=sh -c "pkexec calamares"
+Comment=AstroArch - configure system
+Icon=calamares
+Terminal=false
+StartupNotify=true
+Categories=Qt;System;
+X-AppStream-Ignore=true
