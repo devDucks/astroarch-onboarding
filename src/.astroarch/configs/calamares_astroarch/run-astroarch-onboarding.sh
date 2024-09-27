@@ -16,5 +16,6 @@ chsh -s /usr/bin/zsh root
 # link to folder autostart
 ln -s /usr/share/calamares/.astroarch/configs/calamares_astroarch/AstroArch-onboarding.desktop /home/astronaut/.config/autostart/AstroArch-onboarding.desktop
 
-# Allow root privileges
-sed -i 's/# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/g' /etc/sudoers
+# Allow root access to astroarch-onboarding.desktop
+rm -f /usr/share/polkit-1/actions/com.github.calamares.calamares.policy
+ln -s /usr/share/calamares/.astroarch/configs/calamares_astroarch/com.github.calamares.calamares.policy /usr/share/polkit-1/actions/com.github.calamares.calamares.policy

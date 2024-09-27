@@ -2,7 +2,7 @@
 Categories=Qt;System;
 Comment=AstroArch - configure system
 Comment=AstroArch - configure system
-Exec=sudo calamares
+Exec=sh pkexec calamares
 GenericName=AstroArch onboarding
 GenericName=AstroArch onboarding
 Icon=calamares
