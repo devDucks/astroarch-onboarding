@@ -1,14 +1,14 @@
 [Desktop Entry]
 Categories=Qt;System;
+Comment[en_US]=AstroArch - configure system
 Comment=AstroArch - configure system
-Comment=AstroArch - configure system
-Exec=sh pkexec calamares
-GenericName=AstroArch onboarding
+Exec=pkexec calamares
+GenericName[en_US]=AstroArch onboarding
 GenericName=AstroArch onboarding
 Icon=calamares
 Keywords=calamares;system;configurer;
 MimeType=
-Name=AstroArch onboarding
+Name[en_US]=AstroArch onboarding
 Name=AstroArch onboarding
 Path=
 StartupNotify=true
