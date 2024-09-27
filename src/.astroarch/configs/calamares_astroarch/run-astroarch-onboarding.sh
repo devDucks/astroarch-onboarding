@@ -8,3 +8,4 @@ ln -s /home/astronaut/.astroarch /root
 rm -f /root/.zshrc
 ln -s /home/astronaut/.astroarch/configs/.zshrc /root/.zshrc
 chsh -s /usr/bin/zsh root
+calamares
