@@ -79,13 +79,13 @@ set(CALAMARES_SOVERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}")
 #
 option(INSTALL_POLKIT "Install Polkit configuration" ON)
 option(INSTALL_COMPLETION "Install shell completions" OFF)
-option(INSTALL_CONFIG "Install configuration files" OFF)
+option(INSTALL_CONFIG "Install configuration files" ON)
 # When adding WITH_* that affects the ABI offered by libcalamares,
 # also update libcalamares/CalamaresConfig.h.in
 option(WITH_PYBIND11 "Use bundled pybind11 instead of Boost::Python" ON)
 option(WITH_PYTHON "Enable Python modules API." ON)
 option(WITH_QML "Enable QML UI options." ON)
-option(WITH_QT6 "Use Qt6 instead of Qt5" OFF)
+option(WITH_QT6 "Use Qt6 instead of Qt5" ON)
 #
 # Additional parts to build that do not affect ABI
 option(BUILD_SCHEMA_TESTING "Enable schema-validation-tests" ON)

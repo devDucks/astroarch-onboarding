@@ -32,7 +32,7 @@ Presentation
 
         Image {
             id: background
-            source: "squid.png"
+            source: "slide1.jpg"
             width: 200; height: 200
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
