@@ -1,7 +1,7 @@
 <RCC>
     <qresource>
         <file alias="packagechooserq.qml">packagechooserq-qt6.qml</file>
-        <file>images/kstars_indi_bleeding.jpg</file>
-        <file>images/kstars_indi.jpg</file>
+        <file>images/kstars_stable.svg</file>
+        <file>images/kstars_bleeding.svg</file>
     </qresource>
 </RCC>

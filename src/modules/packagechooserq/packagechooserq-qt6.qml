@@ -91,7 +91,7 @@ Item {
                     y: 25
                     height: 100
                     fillMode: Image.PreserveAspectFit
-                    source: "images/kstars_indi.jpg"
+                    source: "images/kstars_stable.svg"
                 }
             }
 
@@ -153,7 +153,7 @@ Item {
                     y: 25
                     height: 100
                     fillMode: Image.PreserveAspectFit
-                    source: "images/kstars_indi_bleeding.jpg"
+                    source: "images/kstars_bleeding.svg"
                 }
 
             }

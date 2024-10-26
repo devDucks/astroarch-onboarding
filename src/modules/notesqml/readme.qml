@@ -47,7 +47,7 @@ Item {
             activeFocusOnPress: false
             wrapMode: Text.WordWrap
 
-            text: qsTr("<p>Please read the README on https://github.com/devDucks/astroarch.</p>")
+            text: qsTr("<p>More information can be found on https://github.com/devDucks/astroarch.</p>")
         }
     }
 }
