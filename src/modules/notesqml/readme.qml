@@ -37,17 +37,24 @@ Item {
         }
 
         TextArea {
-            id: intro
-            x: 1
-            y: 0
-            width: parent.width - fscrollbar.width
-            font.pointSize: 14
-            textFormat: Text.MarkdownText
-            antialiasing: true
-            activeFocusOnPress: false
-            wrapMode: Text.WordWrap
+                id: intro
+                x: 1
+                y: 0
+                width: parent.width - fscrollbar.width
+                font.pointSize: 14
+                textFormat: TextEdit.RichText
+                antialiasing: true
+                activeFocusOnPress: false
+                wrapMode: Text.WordWrap
 
-            text: qsTr("<p>More information can be found on https://github.com/devDucks/astroarch.</p>")
+                onLinkActivated: Qt.openUrlExternally( link )
+
+                text: qsTr('<p>Find information or ask questions on :</p> \
+                <p><br />Github <a href="https://github.com/devDucks/astroarch">https://github.com/devDucks/astroarch</a></p> \
+                <p>Discord <a href="https://discord.com/invite/uJEQCZKBT8">https://discord.com/invite/uJEQCZKBT8</a></p> \
+                <p>Indilib <a href="https://indilib.org/forum/astro-arch.html">https://indilib.org/forum/astro-arch.html</a></p> \
+                <p>&nbsp;</p> \
+                <p><img src="/usr/share/calamares/branding/astroarch/slide1.png" alt="astroarch image" width="96" height="96" />&nbsp; Clear skies and have fun with AstroArch<br />Mattia Procopio</p>')
         }
     }
 }
