@@ -42,8 +42,7 @@ Item {
                     width: 450
                     height: 104
                     anchors.centerIn: parent
-                    text: qsTr("LibreOffice is a powerful and free office suite, used by millions of people around the world. It includes several applications that make it the most versatile Free and Open Source office suite on the market.<br/>
-                    Default option.")
+                    text: qsTr("Kstars and Indi stable (recommended version)")
                     font.pointSize: 10
                     anchors.verticalCenterOffset: -10
                     anchors.horizontalCenterOffset: 100
@@ -56,7 +55,7 @@ Item {
                     y: 110
                     width: 187
                     height: 14
-                    text: qsTr("LibreOffice")
+                    text: qsTr("Kstars stable")
                     checked: true
                     hoverEnabled: true
                     ButtonGroup.group: switchGroup
@@ -81,7 +80,7 @@ Item {
 
                     onCheckedChanged: {
                         if ( checked ) {
-                            config.packageChoice = "libreoffice"
+                            config.packageChoice = "kstars_indi_stable"
                         }
                     }
                 }
@@ -92,7 +91,7 @@ Item {
                     y: 25
                     height: 100
                     fillMode: Image.PreserveAspectFit
-                    source: "images/libreoffice.jpg"
+                    source: "images/kstars_stable.svg"
                 }
             }
 
@@ -105,7 +104,7 @@ Item {
                     width: 450
                     height: 104
                     anchors.centerIn: parent
-                    text: qsTr("If you don't want to install an office suite, just select No Office Suite. You can always add one (or more) later on your installed system as the need arrives.")
+                    text: qsTr("If you want to test some features not officially released or there are some fix to drivers that will be shipped only with the next indi release, you can move to bleeding edge and check them out")
                     font.pointSize: 10
                     anchors.verticalCenterOffset: -10
                     anchors.horizontalCenterOffset: 100
@@ -118,7 +117,7 @@ Item {
                     y: 110
                     width: 187
                     height: 14
-                    text: qsTr("No Office Suite")
+                    text: qsTr("Kstars bleeding edge")
                     checked: false
                     hoverEnabled: true
                     ButtonGroup.group: switchGroup
@@ -143,7 +142,7 @@ Item {
 
                     onCheckedChanged: {
                         if ( checked ) {
-                            config.packageChoice = "no_office_suite"
+                            config.packageChoice = "kstars_indi_bleeding_edge"
                         }
                     }
                 }
@@ -154,72 +153,9 @@ Item {
                     y: 25
                     height: 100
                     fillMode: Image.PreserveAspectFit
-                    source: "images/no-selection.png"
+                    source: "images/kstars_bleeding.svg"
                 }
 
-            }
-
-            Rectangle {
-                width: 700
-                height: 150
-                color: "#ffffff"
-                radius: 10
-                border.width: 0
-                Text {
-                    width: 450
-                    height: 104
-                    anchors.centerIn: parent
-                    text: qsTr("Create a minimal Desktop install, remove all extra applications and decide later on what you would like to add to your system. Examples of what won't be on such an install, there will be no Office Suite, no media players, no image viewer or print support.  It will be just a desktop, file browser, package manager, text editor and simple web-browser.")
-                    font.pointSize: 10
-                    anchors.verticalCenterOffset: -10
-                    anchors.horizontalCenterOffset: 100
-                    wrapMode: Text.WordWrap
-                }
-
-                Switch {
-                    id: element3
-                    x: 500
-                    y: 110
-                    width: 187
-                    height: 14
-                    text: qsTr("Minimal Install")
-                    checked: false
-                    hoverEnabled: true
-                    ButtonGroup.group: switchGroup
-
-                    indicator: Rectangle {
-                        implicitWidth: 40
-                        implicitHeight: 14
-                        radius: 10
-                        color: element3.checked ? "#3498db" : "#B9B9B9"
-                        border.color: element3.checked ? "#3498db" : "#cccccc"
-
-                        Rectangle {
-                            x: element3.checked ? parent.width - width : 0
-                            y: (parent.height - height) / 2
-                            width: 20
-                            height: 20
-                            radius: 10
-                            color: element3.down ? "#cccccc" : "#ffffff"
-                            border.color: element3.checked ? (element3.down ? "#3498db" : "#3498db") : "#999999"
-                        }
-                    }
-
-                    onCheckedChanged: {
-                        if ( checked ) {
-                            config.packageChoice = "minimal_install"
-                        }
-                    }
-                }
-
-                Image {
-                    id: image3
-                    x: 8
-                    y: 25
-                    height: 100
-                    fillMode: Image.PreserveAspectFit
-                    source: "images/plasma.png"
-                }
             }
 
             Rectangle {
@@ -230,7 +166,7 @@ Item {
                 Text {
                     height: 25
                     anchors.centerIn: parent
-                    text: qsTr("Please select an option for your install, or use the default: LibreOffice included.")
+                    text: qsTr("Default: Kstars stable")
                     font.pointSize: 10
                     wrapMode: Text.WordWrap
                 }

@@ -1,0 +1,32 @@
+- name: "Astronomy"
+  description: "Astronomy softwares"
+  hidden: false
+  selected: false
+  critical: false
+  expanded: true
+  subgroups:
+    - name: "Siril"
+      description: "Siril is an astronomical image processing tool"
+      selected: false
+      packages:
+       - siril
+    - name: "Firecapture"
+      description: "FireCapture is a free JAVA-based software package primarily intended for planetary and lunar image capture"
+      selected: false
+      packages:
+       - firecapture
+    - name: "Libcamera"
+      description: "A complex camera support library"
+      selected: false
+      packages:
+       - libcamera
+    - name: "Rpicam-apps"
+      description: "This is a small suite of libcamera-based applications to drive the cameras on a Raspberry Pi platform"
+      selected: false
+      packages:
+       - rpicam-apps
+    - name: "Indi-pylibcamera"
+      description: "This project implements a Raspberry Pi camera driver for INDI"
+      selected: false
+      packages:
+       - pylibcamera

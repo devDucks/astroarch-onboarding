@@ -261,13 +261,13 @@ Config::genericWelcomeMessage() const
 
     if ( settings ? settings->isSetupMode() : false )
     {
-        message = welcomeStyle ? tr( "<h1>Welcome to the Calamares setup program for %1</h1>" )
+        message = welcomeStyle ? tr( "<h1>Welcome to the setup program for %1</h1>" )
                                : tr( "<h1>Welcome to %1 setup</h1>" );
     }
     else
     {
-        message = welcomeStyle ? tr( "<h1>Welcome to the Calamares installer for %1</h1>" )
-                               : tr( "<h1>Welcome to the %1 installer</h1>" );
+        message = welcomeStyle ? tr( "<h1>Welcome to the configurator for %1</h1>" )
+                               : tr( "<h1>Welcome to the %1 configurator</h1>" );
     }
 
     return message;

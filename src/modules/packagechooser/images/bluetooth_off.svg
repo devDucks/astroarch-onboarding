@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 320 512"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="bluetooth_off.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch10"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="swatch3"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ff0033;stop-opacity:1;"
+         offset="0"
+         id="stop3" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.2792969"
+     inkscape:cx="160.1371"
+     inkscape:cy="256"
+     inkscape:window-width="2560"
+     inkscape:window-height="1376"
+     inkscape:window-x="1680"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid18"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="3.7795276"
+       spacingy="3.7795276"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="false" />
+  </sodipodi:namedview>
+  <path
+     d="M 203.3873,219.24819 313.55157,132.11907 139.9298,0 V 173.97491 L 37.514123,101.36718 0.16155613,127.84749 128.68336,219.24819 0.16155613,310.64888 37.514123,337.12919 139.9298,264.52146 143.15888,431.71208 319.83844,306.3773 Z m 48.59664,-86.84496 -59.4399,42.14083 -0.40199,-84.567505 z m -59.4399,131.54824 59.4399,42.14083 -59.84189,42.42583 z"
+     id="path1"
+     style="fill:#000000;fill-opacity:1;stroke-width:1.00143" />
+  <text
+     xml:space="preserve"
+     style="font-size:44.5063px;line-height:1.25;font-family:sans-serif;stroke-width:1.11266"
+     x="10.450667"
+     y="420.58902"
+     id="text18"
+     transform="scale(0.85690831,1.166986)"><tspan
+       sodipodi:role="line"
+       id="tspan18"
+       x="10.450667"
+       y="420.58902"
+       style="stroke-width:1.11266">BLUETOOTH OFF</tspan></text>
+</svg>
+<!--
+Font Awesome Free 5.4.1 by @fontawesome - https://fontawesome.com
+License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+-->
+

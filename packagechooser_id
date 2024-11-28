@@ -1,0 +1,32 @@
+    - id: stable
+      name: "Astro_stable"
+      description: "Kstars / Indi stable."
+      screenshot: ":/images/kstars_indi.jpg"
+      netinstall:
+            name: "Stable"
+            description: "Kstars-indi stable"
+            hidden: false
+            selected: true
+            critical: false
+            expanded: true
+            packages:
+             - kstars
+             - libindi
+             - indi-3rdparty-drivers
+             - indi-3rdparty-libs
+    - id: bleeding
+      name: "Astro_bleeding"
+      description: "Kstras / Indi bleeding"
+      screenshot: ":/images/kstars_indi_bleeding.jpg"
+      netinstall:
+            name: "Bleeding"
+            description: "Kstars-indi bleeding"
+            hidden: false
+            selected: true
+            critical: false
+            expanded: true
+            packages:
+             - kstars-git
+             - libindi-git
+             - indi-3rdparty-drivers-git
+             - indi-3rdparty-libs-git

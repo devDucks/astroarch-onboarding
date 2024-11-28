@@ -399,7 +399,7 @@ ViewManager::updateButtonLabels()
 {
     const auto* const settings = Calamares::Settings::instance();
 
-    QString nextIsInstallationStep = settings->isSetupMode() ? tr( "&Set Up", "@button" ) : tr( "&Install", "@button" );
+    QString nextIsInstallationStep = settings->isSetupMode() ? tr( "&Configure", "@button" ) : tr( "&Configure", "@button" );
     QString quitOnCompleteTooltip = settings->isSetupMode()
         ? tr( "Setup is complete. Close the setup program.", "@tooltip" )
         : tr( "The installation is complete. Close the installer.", "@tooltip" );

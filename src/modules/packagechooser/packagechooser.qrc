@@ -1,6 +1,16 @@
 <RCC>
     <qresource prefix="/">
-        <file>images/no-selection.png</file>
-        <file>images/calamares.png</file>
+         <file>images/power_supply.svg</file>
+         <file>images/power_max.svg</file>
+         <file>images/gps_on.svg</file>
+         <file>images/gps_off.svg</file>
+         <file>images/gps_on_ublox.svg</file>
+         <file>images/gps_on_uart.svg</file>
+         <file>images/ftp_on.svg</file>
+         <file>images/ftp_off.svg</file>
+         <file>images/bluetooth_on.svg</file>
+         <file>images/bluetooth_off.svg</file>
+         <file>images/kstars_stable.svg</file>
+         <file>images/kstars_bleeding.svg</file>
     </qresource>
 </RCC>
