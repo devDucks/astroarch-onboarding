@@ -55,6 +55,8 @@ class Config : public Calamares::ModuleSystem::Config
     Q_PROPERTY( QString packageChoice READ packageChoice WRITE setPackageChoice NOTIFY packageChoiceChanged )
     Q_PROPERTY( QString prettyStatus READ prettyStatus NOTIFY prettyStatusChanged FINAL )
 
+    Q_PROPERTY( QString astromonitorToken READ astromonitorToken WRITE setAstromonitorToken NOTIFY astromonitorTokenChanged )
+
 public:
     Config( QObject* parent = nullptr );
     ~Config() override;
@@ -101,9 +103,14 @@ public:
     QString prettyName() const;
     QString prettyStatus() const;
 
+    QString astromonitorToken() const { return m_astromonitorToken.value_or( QString() ); }
+    void setAstromonitorToken( const QString& astromonitorToken );
+
 signals:
     void packageChoiceChanged( QString packageChoice );
     void prettyStatusChanged();
+
+    void astromonitorTokenChanged( QString astromonitorToken );
 
 private:
     PackageListModel* m_model = nullptr;
@@ -121,6 +128,9 @@ private:
      * Reading the property will return an empty QString.
      */
     std::optional< QString > m_packageChoice;
+
+    std::optional< QString > m_astromonitorToken;
+
     Calamares::Locale::TranslatedString* m_stepName;  // As it appears in the sidebar
 };
 

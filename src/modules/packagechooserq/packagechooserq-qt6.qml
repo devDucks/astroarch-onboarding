@@ -14,6 +14,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
+
 Item {
     width:  parent.width
     height: parent.height
@@ -171,7 +172,54 @@ Item {
                     wrapMode: Text.WordWrap
                 }
             }
+
+            Rectangle {
+                width: 700
+                height: 50
+                color: "#ffffff"
+                radius: 10
+                border.width: 0
+
+                Text {
+                    x: 10
+                    y: 15
+                    text: qsTr("Recovering your backup with Astro monitor:")
+                    font.pointSize: 10
+                }
+                Switch {
+                    id: backupSwitch
+                    x: 500
+                    y: 110
+                    width: 187
+                    height: 14
+                    anchors.verticalCenter: parent.verticalCenter
+                    text: checked ? qsTr("Yes") : qsTr("No")
+                    checked: false
+                    hoverEnabled: true
+
+                    indicator: Rectangle {
+                        implicitWidth: 40
+                        implicitHeight: 14
+                        radius: 10
+                        color: backupSwitch.checked ? "#3498db" : "#B9B9B9"
+                        border.color: backupSwitch.checked ? "#3498db" : "#cccccc"
+
+                        Rectangle {
+                            x: backupSwitch.checked ? parent.width - width : 0
+                            y: (parent.height - height) / 2
+                            width: 20
+                            height: 20
+                            radius: 10
+                            color: backupSwitch.down ? "#cccccc" : "#ffffff"
+                            border.color: backupSwitch.checked ? (backupSwitch.down ? "#3498db" : "#3498db") : "#999999"
+                        }
+                    }
+
+                    onCheckedChanged: {
+                        config.astromonitorToken = checked ? "true" : "false"
+                    }
+                }
+            }
         }
     }
-
 }

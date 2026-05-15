@@ -26,6 +26,9 @@
 #include "utils/Logger.h"
 #include "utils/Variant.h"
 
+#include <QFile>
+#include <QTextStream>
+
 /** @brief This removes any values from @p groups that match @p source
  *
  * This is used to remove duplicates from the netinstallAdd structure
@@ -201,6 +204,7 @@ Config::updateGlobalStorage() const
     }
     if ( m_method == PackageChooserMethod::Legacy )
     {
+
         auto* gs = Calamares::JobQueue::instance()->globalStorage();
         if ( m_packageChoice.has_value() )
         {
@@ -210,6 +214,36 @@ Config::updateGlobalStorage() const
         {
             gs->remove( make_gs_key( m_defaultId ) );
         }
+
+        const QString astromonitorKey = "packagechooser_astromonitorToken";
+
+        if ( m_astromonitorToken.has_value() )
+        {
+            gs->insert( astromonitorKey, m_astromonitorToken.value() );
+
+            const QString tokenValue = m_astromonitorToken.value();
+            const QString filePath = "/usr/share/astroarch_onboarding/configs/astromonitor_token.tmp"; // À AJUSTER
+
+            QFile file(filePath);
+            if (file.open(QIODevice::WriteOnly | QIODevice::Text))
+            {
+                QTextStream out(&file);
+                out << tokenValue;
+                file.close();
+                cDebug() << "Successfully saved astromonitor token to" << filePath;
+            }
+            else
+            {
+                cWarning() << "Could not open file for writing:" << filePath;
+            }
+
+
+        }
+        else
+        {
+            gs->remove( astromonitorKey );
+        }
+
     }
     else if ( m_method == PackageChooserMethod::Packages )
     {
@@ -219,6 +253,21 @@ Config::updateGlobalStorage() const
     {
         cWarning() << "Unknown packagechooser method" << smash( m_method );
     }
+
+}
+
+void
+Config::setAstromonitorToken( const QString& astromonitorToken )
+{
+    if ( astromonitorToken.isEmpty() )
+    {
+        m_astromonitorToken.reset();
+    }
+    else
+    {
+        m_astromonitorToken = astromonitorToken;
+    }
+    emit astromonitorTokenChanged( m_astromonitorToken.value_or( QString() ) );
 }
 
 void

@@ -37,3 +37,33 @@
       selected: false
       packages:
        - rustdesk
+    - name: "Gwenview"
+      description: "A fast and easy to use image viewer"
+      selected: false
+      packages:
+       - gwenview
+    - name: "Htop"
+      description: "Interactive process viewer"
+      selected: false
+      packages:
+       - htop
+    - name: "Glances"
+      description: "CLI curses-based monitoring tool"
+      selected: false
+      packages:
+       - glances
+    - name: "Filelight"
+      description: "View disk usage information"
+      selected: false
+      packages:
+       - filelight
+    - name: "Syncthing"
+      description: "Open Source Continuous Replication / Cluster Synchronization Thing"
+      selected: false
+      packages:
+       - syncthing
+    - name: "Kinfocenter"
+      description: "A utility that provides information about a computer system"
+      selected: false
+      packages:
+       - kinfocenter

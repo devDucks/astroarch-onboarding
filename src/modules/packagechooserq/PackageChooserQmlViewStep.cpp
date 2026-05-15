@@ -17,6 +17,9 @@
 #include "utils/System.h"
 #include "utils/Variant.h"
 
+#include "Job.h"
+#include "ContextualProcessJob.h"
+
 CALAMARES_PLUGIN_FACTORY_DEFINITION( PackageChooserQmlViewStepFactory, registerPlugin< PackageChooserQmlViewStep >(); )
 
 PackageChooserQmlViewStep::PackageChooserQmlViewStep( QObject* parent )

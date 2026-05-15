@@ -26,6 +26,20 @@ if [ $check_extracmakemodules -eq 0 ]; then
     echo "extra-cmake-modules installed"
 fi
 
+check_base_devel=$(pacman -Q | grep -c base-devel)
+if [ $check_base_devel -eq 0 ]; then
+    echo "base-devel not found... Installing"
+    sudo pacman -Sy base-devel --noconfirm
+    echo "base-devel installed"
+fi
+
+check_make=$(pacman -Q | grep -c make)
+if [ $check_make -eq 0 ]; then
+    echo "make not found... Installing"
+    sudo pacman -Sy make --noconfirm
+    echo "make installed"
+fi
+
 # Build
 mkdir -p build
 cd build
@@ -41,8 +55,8 @@ cd ..
 # Install files
 sudo mkdir -p /usr/share/calamares/branding
 sudo cp -R ./src/branding/astroarch /usr/share/calamares/branding/
-sudo cp ./src/.astroarch/configs/49-nopasswd-calamares-vnc.rules /etc/polkit-1/rules.d/49-nopasswd-calamares-vnc.rules
-sudo cp ./src/.astroarch/configs/49-nopasswd-calamares-xrdp.rules /etc/polkit-1/rules.d/49-nopasswd-calamares-xrdp.rules
-sudo cp ./src/.astroarch/configs/com.github.calamares.calamares.policy /usr/share/polkit-1/actions/com.github.calamares.calamares.policy
-cp ./src/.astroarch/configs/netinstall_software.yaml /home/astronaut/.astroarch/configs/netinstall_software.yaml
-cp -r ./src/.astroarch/plugins/power_max_current /home/astronaut/.astroarch/plugins
+sudo cp ./src/usr/share/astroarch_onboarding/configs/49-nopasswd-calamares-vnc.rules /etc/polkit-1/rules.d/49-nopasswd-calamares-vnc.rules
+sudo cp ./src/usr/share/astroarch_onboarding/configs/49-nopasswd-calamares-xrdp.rules /etc/polkit-1/rules.d/49-nopasswd-calamares-xrdp.rules
+sudo cp ./src/usr/share/astroarch_onboarding/configs/com.github.calamares.calamares.policy /usr/share/polkit-1/actions/com.github.calamares.calamares.policy
+sudo cp -r ./src/usr/share/astroarch_onboarding /usr/share/
+
